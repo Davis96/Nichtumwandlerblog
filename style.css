@@ -1,127 +1,116 @@
 {
- margin:0
-border:0
-padding:0   
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 
-body{
+body {
     background: #333;
-    font:14px;
+    font: 14px;
     font-family: sans-serif;
-    color:blanchedalmond;
-    margin:0;
+    color: blanchedalmond;
+    margin: 0;
 }
-h1{
+h1 {
     text-align: center;
-    font-size:180%;
-    line-height:120%
+    font-size: 180%;
+    line-height: 120%
     padding: 5px 0;
 }
-h2{
+h2 {
     text-decoration: underline;
-    line-height:280%;
-    padding-left:2%;
+    line-height: 280%;
+    padding-left: 2%;
 }
-h3{
-    line-height:110%;
-    padding:5% 0;
+h3 {
+    line-height: 110%;
+    padding: 5% 0;
 }
 p{
-    padding:1%;
+    padding: 1%;
 }
-img{
+img {
     text-align: center;
     max-width: 100%;
-    height:auto;
+    height: auto;
     width: auto;
 }
-a{
-    color:aliceblue;
+a {
+    color: aliceblue;
     text-decoration: none;
-    font-weight:bold;
+    font-weight: bold;
 }
 a:hover {
-    color:white;
-    text-decoration:underline;
-    
+    color: white;
+    text-decoration: underline;
 }
 header{
-    width:100%;
+    width: 100%;
     height: 86px;
     position: fixed;
     top 0;
     left: 0;
-    z-index:100;
-    opacity:0,90;
+    z-index: 100;
+    opacity: 0,90;
 }
-logo{
+logo {
     margin: 20px;
     float: left;
     width: 200px;
     height: 60px;
     background: url(Content.png);
 }
-nav{
-    float:right;
+nav {
+    float: right;
     padding: 35px 20px 20px 0px;
 }
-£Menueicon.png{
-    display:hidden;
-    width:40px;
-    height:40px;
+£Menueicon.png {
+    display: hidden;
+    width: 40px;
+    height: 40px;
     background: url(Men%C3%BCicon.png)
 }
 £Menueicon.png:hover {
-    border-radius:4px 4px 0 0;
-    
-    
-    
+    border-radius: 4px 4px 0 0;
 }
-ul{
-   list-style:none;
-    
+ul {
+   list-style: none;
 }
 nav ul li {
     display: inline-block;
     float: left;
     padding: 10px;
-    
 }
 .current {
     text-decoration: underline;
-    
 }
+/* what the fuck? was sollen die namen? :D */
 £{
     margin: 40px 0;
-    
 }
 £content {
     margin: 0 auto;
-    max-width:1140px;
-    
+    max-width: 1140px;
 }
 .blueberry {
     max-width: 666px;
     margin-top: 120px;
-    
 }
-section{
-    width:29%;
+section { /* sollte eher eine class sein - section ist zu allgemein */
+    width: 29%;
     float: left;
     margin: 2% 2%;
     text-align: center;
-    
 }
 .Class {
     clear: both;
 }
-article{
+article { /* dasselbe wie bei section - so allgemeine tag selektoren sollte man selten benutzen */
     margin: 0 auto;
     width: 50%;
     padding: 4%;
-    
 }
-aside{
+aside {
     float: right;
     margin: 0 auto;
     width: 35%;
@@ -129,32 +118,29 @@ aside{
 }
 ul.li {
     padding-left: 3%;
-    
 }
-footer{
-    background:#333333;
+footer { /* again */
+    background: #333333;
     width: 100%;
     overflow: hidden;
     opacity: 0.90;
-    
 }
 footer p, footer h3{
-    color:#FFF;
+    color: #FFF;
 }
 footer p a{
-    color:#FFF;
+    color: #FFF;
     text-decoration: none;
-    
 }
 ul.social li {
     display: inline;
-    }
+}
 ul.social li img {
     height: 50px;
 }
 footer.second {
     border-top: 1px solid #678;
-    background-color:#333333;
+    background-color: #333333;
     max-height: 50px;
     text-align: center;
     opacity: 0.95;
@@ -162,41 +148,33 @@ footer.second {
 
 /* Dropmenü*/
 
-
-ul.Dropmenu li{
+ul.Dropmenu li {
     display: none;
-    float:left;
+    float: left;
     list-style-position: inside;
     cursor: pointer;
-    
-    
-    
 }
 li:hover > ul.Dropmenu li {
-    display:block;
+    display: block;
     opacity: 0;
-    animation-name: drive; 
+    animation-name: drive;
     animation-duration: 3s;
     animation-delay: 300ms;
-    animation animation-timing-function: ease-in-out; 
+    animation animation-timing-function: ease-in-out;
     animation animation-iteration-count: 3;
     animation-direction: normal;
     animation-fill-mode: forwards;
     animation-play-state: running;
-    
-    
 }
-    
 
 @keyframes drive{
     from{opacity: 0;
         transform: rotate(-90deg) translate(30px);
-    } 
+    }
     to {opacity: 1;
         transform: rotate(0deg) translate(0px);
     }
 }
-    
 
 @keyframes slider {
     0% {left: 0}
@@ -212,10 +190,8 @@ li:hover > ul.Dropmenu li {
 #slider {
     overflow: hidden;
     height: 550px;
-    
-    
 }
-#slider figure img{
+#slider figure img {
     width: 20%;
     float: left;
 }
@@ -227,6 +203,5 @@ li:hover > ul.Dropmenu li {
     left: 0;
     text-align: left;
     font-size: 0;
-    animation:20s slider infinite;
+    animation: 20s slider infinite;
 }
-    
