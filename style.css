@@ -1,0 +1,232 @@
+{
+ margin:0
+border:0
+padding:0   
+}
+
+body{
+    background: #333;
+    font:14px;
+    font-family: sans-serif;
+    color:blanchedalmond;
+    margin:0;
+}
+h1{
+    text-align: center;
+    font-size:180%;
+    line-height:120%
+    padding: 5px 0;
+}
+h2{
+    text-decoration: underline;
+    line-height:280%;
+    padding-left:2%;
+}
+h3{
+    line-height:110%;
+    padding:5% 0;
+}
+p{
+    padding:1%;
+}
+img{
+    text-align: center;
+    max-width: 100%;
+    height:auto;
+    width: auto;
+}
+a{
+    color:aliceblue;
+    text-decoration: none;
+    font-weight:bold;
+}
+a:hover {
+    color:white;
+    text-decoration:underline;
+    
+}
+header{
+    width:100%;
+    height: 86px;
+    position: fixed;
+    top 0;
+    left: 0;
+    z-index:100;
+    opacity:0,90;
+}
+logo{
+    margin: 20px;
+    float: left;
+    width: 200px;
+    height: 60px;
+    background: url(Content.png);
+}
+nav{
+    float:right;
+    padding: 35px 20px 20px 0px;
+}
+£Menueicon.png{
+    display:hidden;
+    width:40px;
+    height:40px;
+    background: url(Men%C3%BCicon.png)
+}
+£Menueicon.png:hover {
+    border-radius:4px 4px 0 0;
+    
+    
+    
+}
+ul{
+   list-style:none;
+    
+}
+nav ul li {
+    display: inline-block;
+    float: left;
+    padding: 10px;
+    
+}
+.current {
+    text-decoration: underline;
+    
+}
+£{
+    margin: 40px 0;
+    
+}
+£content {
+    margin: 0 auto;
+    max-width:1140px;
+    
+}
+.blueberry {
+    max-width: 666px;
+    margin-top: 120px;
+    
+}
+section{
+    width:29%;
+    float: left;
+    margin: 2% 2%;
+    text-align: center;
+    
+}
+.Class {
+    clear: both;
+}
+article{
+    margin: 0 auto;
+    width: 50%;
+    padding: 4%;
+    
+}
+aside{
+    float: right;
+    margin: 0 auto;
+    width: 35%;
+    padding: 4%;
+}
+ul.li {
+    padding-left: 3%;
+    
+}
+footer{
+    background:#333333;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0.90;
+    
+}
+footer p, footer h3{
+    color:#FFF;
+}
+footer p a{
+    color:#FFF;
+    text-decoration: none;
+    
+}
+ul.social li {
+    display: inline;
+    }
+ul.social li img {
+    height: 50px;
+}
+footer.second {
+    border-top: 1px solid #678;
+    background-color:#333333;
+    max-height: 50px;
+    text-align: center;
+    opacity: 0.95;
+}
+
+/* Dropmenü*/
+
+
+ul.Dropmenu li{
+    display: none;
+    float:left;
+    list-style-position: inside;
+    cursor: pointer;
+    
+    
+    
+}
+li:hover > ul.Dropmenu li {
+    display:block;
+    opacity: 0;
+    animation-name: drive; 
+    animation-duration: 3s;
+    animation-delay: 300ms;
+    animation animation-timing-function: ease-in-out; 
+    animation animation-iteration-count: 3;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    
+    
+}
+    
+
+@keyframes drive{
+    from{opacity: 0;
+        transform: rotate(-90deg) translate(30px);
+    } 
+    to {opacity: 1;
+        transform: rotate(0deg) translate(0px);
+    }
+}
+    
+
+@keyframes slider {
+    0% {left: 0}
+    20%{left: 0}
+    25%{left: 0}
+    45%{left: -100%}
+    50%{left: -100%}
+    70%{left: -100%}
+    75%{left: -200%}
+    95%{left: -200%}
+    100%{left: -200%}
+}
+#slider {
+    overflow: hidden;
+    height: 550px;
+    
+    
+}
+#slider figure img{
+    width: 20%;
+    float: left;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin:0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation:20s slider infinite;
+}
+    
