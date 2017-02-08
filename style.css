@@ -46,7 +46,7 @@ a:hover {
 }
 header{
     width: 100%;
-    height: 86px;
+    height: 150px;
     position: fixed;
     top 0;
     left: 0;
@@ -60,10 +60,8 @@ logo {
     height: 60px;
     background: url(Content.png);
 }
-nav {
-    float: right;
-    padding: 35px 20px 20px 0px;
-}
+
+
 £Menueicon.png {
     display: hidden;
     width: 40px;
@@ -73,14 +71,9 @@ nav {
 £Menueicon.png:hover {
     border-radius: 4px 4px 0 0;
 }
-ul {
-   list-style: none;
-}
-nav ul li {
-    display: inline-block;
-    float: left;
-    padding: 10px;
-}
+
+
+    
 .current {
     text-decoration: underline;
 }
@@ -92,10 +85,7 @@ nav ul li {
     margin: 0 auto;
     max-width: 1140px;
 }
-.blueberry {
-    max-width: 666px;
-    margin-top: 120px;
-}
+
 section { /* sollte eher eine class sein - section ist zu allgemein */
     width: 29%;
     float: left;
@@ -116,9 +106,7 @@ aside {
     width: 35%;
     padding: 4%;
 }
-ul.li {
-    padding-left: 3%;
-}
+
 footer { /* again */
     background: #333333;
     width: 100%;
@@ -145,17 +133,63 @@ footer.second {
     text-align: center;
     opacity: 0.95;
 }
-
-/* Dropmenü*/
-
-ul.Dropmenu li {
-    display: none;
-    float: left;
-    list-style-position: inside;
-    cursor: pointer;
+nav {
+  padding: 50px;
+  text-align: center;
+  float: right;
 }
-li:hover > ul.Dropmenu li {
-    display: block;
+nav > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  background: #666;
+  border-radius: 5px;
+}
+nav > ul > li {
+  float: left;
+  width: 150px;
+  height: 65px;
+  line-height: 65px;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+nav > ul > li:hover {
+  background: #d5d5d5;
+  border-radius: 5px;
+}
+
+ul.drop-menu {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  padding: 0;
+}
+ul.drop-menu li {
+  background: #666;
+  color: rgba(255, 255, 255, 0.7);
+}
+ul.drop-menu li:hover {
+  background: #606060;
+}
+ul.drop-menu li:last-child {
+  border-radius: 0px 0px 5px 5px;
+}
+
+ul.drop-menu li {
+  display: none;
+}
+
+li:hover > ul.drop-menu li {
+  display: block;
+
+
+
+    display:block;
     opacity: 0;
     animation-name: drive;
     animation-duration: 3s;
@@ -166,6 +200,15 @@ li:hover > ul.Dropmenu li {
     animation-fill-mode: forwards;
     animation-play-state: running;
 }
+
+ul.Dropmenu li {
+    display: none;
+    padding: 3px;
+  
+    
+    cursor: pointer;
+}
+
 
 @keyframes drive{
     from{opacity: 0;
